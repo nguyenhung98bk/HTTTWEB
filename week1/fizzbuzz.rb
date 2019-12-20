@@ -1,12 +1,11 @@
-puts('Lets play fizzbuzz')
-print('enter a number: ')
-number = gets()
-number = number.to_i
-if number%15 == 0 then
-  puts ('fizzbuzz')
-elsif number % 5 == 0 then
-  puts ('buzz')
-elsif number % 3 == 0 then 
-  puts ('fizz')
-else puts number
+(1..100).each do |x|
+	if x % 3 == 0 and x % 5 == 0
+		puts "FizzBuzz"
+	elsif x % 3 == 0
+		puts "Fizz"
+	elsif x % 5 == 0
+		puts "Buzz"
+	else
+		puts x
+	end
 end
